@@ -374,19 +374,20 @@ section:nth-of-type(odd) p {
 }
 section:nth-of-type(even) {
   font-size: 1.5rem;
+  text-align: justify;
 }
 section:first-of-type {
-  background-image: url("../images/pamukkale1.jpg");
+  background-image: url("./images/pamukkale1.jpg");
   height: 100vh;
 }
 section:nth-of-type(3) {
-  background-image: url("../images/hierapolis.jpg");
+  background-image: url("./images/hierapolis.jpg");
 }
 section:nth-of-type(5) {
-  background-image: url("../images/theater.jpg");
+  background-image: url("./images/theater.jpg");
 }
 section:nth-of-type(7) {
-  background-image: url("../images/ballons.jpg");
+  background-image: url("./images/ballons.jpg");
   height: 100vh;
 }
 
