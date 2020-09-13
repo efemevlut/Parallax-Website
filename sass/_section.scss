@@ -1,0 +1,66 @@
+section {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 15rem;
+    padding: 3rem 5rem;
+
+    
+
+    &:nth-of-type(odd) {
+        background-size: cover;
+        background-position: center;        
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 30rem;
+
+        p {
+            background-color: $primaryColor;
+            color: black; 
+            padding: 1.25rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+            opacity: 70%;
+            letter-spacing: 1vw;
+            border-radius: 5px;
+            width: 35vw;
+            text-align: center;
+            
+        }
+    
+    }
+
+    &:nth-of-type(even) {
+        font-size: 1.5rem;
+    }
+
+    &:first-of-type{
+        background-image: url("../images/pamukkale1.jpg");
+        height: 100vh;
+    }
+
+    &:nth-of-type(3) {
+        background-image: url("../images/hierapolis.jpg")
+    }
+
+    &:nth-of-type(5) {
+        background-image: url("../images/theater.jpg");
+    }
+    &:nth-of-type(7) {
+        background-image: url("../images/ballons.jpg");
+        height: 100vh;
+    }
+
+    
+}
+
+.section-dark {
+    background-color: $tertiaryColor !important;
+    color: $quaternaryColor !important;
+}
+
+
+

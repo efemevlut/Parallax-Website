@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pamukkale</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
   <body>
-    <div class="image1">
-      <div>
-        <span id="span1"> PAMUKKALE </span>
-      </div>
+    <div class="toggle">
+      <input type="checkbox" id="demo" onChange="toggleDocument()" />
+      <label for="demo"></label>
     </div>
-
-    <section class="first">
+    <!-- Section One  -->
+    <section>
+      <p class="black">Pamukkale</p>
+    </section>
+    <!-- Section Two  -->
+    <section>
       <p>
         Pamukkale, meaning "cotton castle" in Turkish, is a natural site in
         Denizli in southwestern Turkey. The area is famous for a carbonate
@@ -26,24 +29,12 @@
         town of Denizli, 20 km away
       </p>
     </section>
-
-    <div class="ParallaxVideo">
-      <video autoplay loop src="./videos/YouCut_20200908_172417163.mp4"></video>
-    </div>
-
-    <section class="second">
-      <p>
-        Known as Pamukkale (Cotton Castle) or ancient Hierapolis (Holy City), this area has been drawing the weary to its thermal springs since the time of Classical antiquity. The Turkish name refers to the surface of the shimmering, snow-white limestone, shaped over millennia by calcium-rich springs. Dripping slowly down the vast mountainside, mineral-rich waters foam and collect in terraces, spilling over cascades of stalactites into milky pools below. Legend has it that the formations are solidified cotton (the area's principal crop) that giants left out to dry.
-      </p>
+    <!-- Section Three  -->
+    <section>
+      <p class="black">Ancient Hieropolis</p>
     </section>
-
-    <div class="image2">
-      <div>
-        <span id="span2">ANCIENT HIEROPOLIS </span>
-      </div>
-    </div>
-    <div id="third"></div>
-    <section class="third">
+    <!-- Section Four  -->
+    <section>
       <p>
         There are only a few historical facts known about the origin of the
         city. No traces of the presence of Hittites or Persians have been found.
@@ -57,14 +48,12 @@
         grew in Hierapolis and has been estimated as high as 50,000 in 62 BC.
       </p>
     </section>
-
-    <div class="image3">
-      <div>
-        <span id="span3"> THEATRE </span>
-      </div>
-    </div>
-
-    <section class="fourth">
+    <!-- Section Five  -->
+    <section>
+      <p class="black">Theatre</p>
+    </section>
+    <!-- Section Six  -->
+    <section>
       <p>
         The Theatre was probably constructed under the reign of Hadrian after
         the earthquake of 60 AD.[11] The facade is 300 feet (91 m) long, the
@@ -75,11 +64,18 @@
         cavea and a 6-foot-high (1.83 m) wall surrounding the orchestra.
       </p>
     </section>
+    <!-- Section Seven  -->
+    <section>
+      <p class="black">Pamukkale</p>
+    </section>
 
-    <div class="image4">
-      <div class="text">
-        <span id="span4"> PAMUKKALE </span>
-      </div>
-    </div>
+    <script>
+      function toggleDocument() {
+        var elements = document.querySelectorAll("section, section p");
+        for (i = 0; i < elements.length; i++) {
+          elements[i].classList.toggle("section-dark");
+        }
+      }
+    </script>
   </body>
 </html>
