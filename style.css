@@ -396,11 +396,43 @@ section:nth-of-type(7) {
   color: #DDCFAC !important;
 }
 
+@media (max-width: 630px) {
+  section {
+    height: 19rem;
+    padding: 0px 20px;
+  }
+  section:nth-of-type(odd) {
+    height: 10rem;
+  }
+  section:nth-of-type(odd) p {
+    padding: 1.25rem;
+    font-size: 2rem;
+    width: 60vw;
+  }
+  section:nth-of-type(even) {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  section:first-of-type {
+    background-image: url("./images/pamukkale1.jpg");
+    height: 100vh;
+  }
+  section:nth-of-type(3) {
+    background-image: url("./images/hierapolis.jpg");
+  }
+  section:nth-of-type(5) {
+    background-image: url("./images/theater.jpg");
+  }
+  section:nth-of-type(7) {
+    background-image: url("./images/ballons.jpg");
+    height: 100vh;
+  }
+}
 .toggle {
   position: absolute;
   z-index: 1;
-  top: 7px;
-  left: 3px;
+  top: 15px;
+  left: 10px;
 }
 .toggle [type=checkbox]:not(:checked),
 .toggle [type=checkbox]:checked {
